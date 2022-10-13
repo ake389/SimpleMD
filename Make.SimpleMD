@@ -1,0 +1,17 @@
+EBASE := SimpleMD.
+
+LINK_WITH_FORTRAN_COMPILER=TRUE
+
+TOP := .
+
+include $(AMREX_HOME)/Tools/GNUMake/Make.defs
+
+INCLUDE_LOCATIONS += $(SimpleMD_HOME)
+VPATH_LOCATIONS   += $(SimpleMD_HOME)
+
+include $(SimpleMD_HOME)/Make.package
+
+all: $(executable)
+	@echo SUCCESS
+
+include $(AMREX_HOME)/Tools/GNUMake/Make.rules

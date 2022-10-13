@@ -1,0 +1,7 @@
+F90EXE_sources += SimpleMD.F90
+F90EXE_sources += inputs.F90
+F90EXE_sources += initial_conditions.F90
+F90EXE_sources += walls.F90
+F90EXE_sources += interaction.F90
+F90EXE_sources += timestepping.F90
+F90EXE_sources += plotting.F90
